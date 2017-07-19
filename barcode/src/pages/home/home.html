@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lector de BarCode
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="escanear()">Escanear</button>
+  <div *ngIf="barcode">
+    <p>El código de barras es: {{barcode.text}} - {{barcode.format}}</p>
+  </div>
+
+  <input type="text" [(ngModel)]="nomProducto">
+  <ion-list>
+    <ion-item *ngFor="let producto of productos | productoUpperCase | filtrarProductos : nomProducto">
+      {{ producto.nombre }}
+    </ion-item>
+  </ion-list>
+
+  <div>
+    <div><input type="text" [(ngModel)]="codigo"></div>
+    <button ion-button (click)="codificar()">Crear QR</button>
+  </div>
+</ion-content>

@@ -1,0 +1,9 @@
+Documentación
+
+Angular e ionic
+https://desarrolloweb.com/manuales/manual-angular-2.html
+http://blog.enriqueoriol.com/
+
+Sass
+https://librosweb.es/libro/sass/
+https://sass-guidelin.es/es/

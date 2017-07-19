@@ -1,0 +1,11 @@
+<p>
+  {{titulo}}
+</p>
+<input type="text" [(ngModel)]="nombre">
+<p>
+  Hola {{nombre}}
+</p>
+<p [hidden]="!visible">Este parrafo es secreto</p>
+<button (click)="mustraOculta()">Muestrame  u oculta</button>
+<app-lista></app-lista>
+<app-nuevo></app-nuevo>
